@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-
+    <style>
+        .position {height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .err {color: red;}
+    </style>
 </head>
-<body>
+<body class="position">
+    <h1>로그인</h1>
+    <div class="err">${err}</div>
     <div>
         <form action="/user/login" method="post">
             <div><input type="text" name="uid" placeholder="user id"></div>

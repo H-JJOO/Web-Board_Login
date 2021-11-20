@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join</title>
+    <style>
+        .position {display: flex; flex-direction: column; align-items: center;}
+        .err {color: red;}
+    </style>
 </head>
-<body>
+<body class="position">
     <h1>회원가입</h1>
+    <div class="err">${err}</div>
     <div>
         <form action="/user/join" method="post">
             <div><input type="text" name="uid" placeholder="user id"></div>
@@ -21,6 +26,7 @@
                 <input type="submit" value="join">
             </div>
         </form>
+        <div><a href="/user/login"><input type="button" value="login 하러가기"></a></div>
     </div>
 </body>
 </html>
