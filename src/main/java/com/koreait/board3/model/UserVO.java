@@ -8,6 +8,8 @@ public class UserVO {
     private int gender;
     private String rdt;
 
+
+
     public int getIuser() {
         return iuser;
     }
